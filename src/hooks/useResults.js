@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import imageServer from '../apis/imageServer'
+import imageServer from '../apis/image'
 
 export default () => {
 

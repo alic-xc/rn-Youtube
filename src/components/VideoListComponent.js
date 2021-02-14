@@ -16,7 +16,7 @@ export const videoList = [
 
 const VideoListComponent = ({gridDisplay})=> {
     return (
-        <FlatList scrollEnabled={false} keyExtractor={ (item) => item.name } data={videoList} renderItem={ result => <VideoComponent gridDisplay={gridDisplay} video={result.item} /> } />
+        <FlatList scrollEnabled={false} keyExtractor={ (item) => item.name } data={videoList} renderItem={ result =>  <VideoComponent gridDisplay={gridDisplay} video={result.item} /> } />
     )
 }
 
