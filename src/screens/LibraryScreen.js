@@ -12,24 +12,24 @@ const LibraryScreen = () => {
             <RecentVideoComponent />
             <View>
                 <Pressable style={styles.listStyle} >
-                    <MaterialIcons name="history" size={24} color="black" />
-                    <Text>History</Text>
+                    <MaterialIcons style={styles.iconStyle} name="history" size={24} color="black" />
+                    <Text style={styles.textStyle}>History</Text>
                 </Pressable>
                 <Pressable style={styles.listStyle}>
-                    <MaterialCommunityIcons name="download" size={24} color="black" />
-                    <Text>Downloads</Text>
+                    <MaterialCommunityIcons style={styles.iconStyle} name="download" size={24} color="black" />
+                    <Text style={styles.textStyle}>Downloads</Text>
                 </Pressable>
                 <Pressable style={styles.listStyle}>
-                    <MaterialIcons name="video-collection" size={24} color="black" />  
-                    <Text>Your videos</Text>
+                    <MaterialIcons style={styles.iconStyle} name="video-collection" size={24} color="black" />  
+                    <Text style={styles.textStyle}>Your videos</Text>
                 </Pressable>
                 <Pressable style={styles.listStyle}>
-                    <MaterialIcons name="local-movies" size={24} color="black" />   
-                    <Text>Your movies</Text>
+                    <MaterialIcons style={styles.iconStyle} name="local-movies" size={24} color="black" />   
+                    <Text style={styles.textStyle}>Your movies</Text>
                 </Pressable>
                 <Pressable style={styles.listStyle}>
-                    <MaterialIcons name="watch-later" size={24} color="black" />
-                    <Text>Watch later</Text>
+                    <MaterialIcons style={styles.iconStyle} name="watch-later" size={24} color="black" />
+                    <Text style={styles.textStyle}>Watch later</Text>
                 </Pressable>
             </View>
 
@@ -45,7 +45,15 @@ const styles = StyleSheet.create({
     },
     listStyle: {
         flexDirection: 'row',
+        alignItems: 'center',
         padding: 15,
+    },
+    iconStyle:{
+        color: '#aaa'
+    },
+    textStyle: {
+        paddingLeft: 20,
+        fontSize: 17,
     }
 })
 
